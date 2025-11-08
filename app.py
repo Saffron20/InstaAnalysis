@@ -45,7 +45,8 @@ st.markdown('<div class="bigheader">🚀 AI-Enhanced Instagram Intelligence</div
 # ==========================
 # INPUTS
 # ==========================
-API_KEY = os.environ.get("RAPIDAPI_KEY")
+API_KEY = st.secrets["RAPIDAPI_KEY"]
+
 
 if not API_KEY:
     st.error('RAPIDAPI_KEY not set! Run in PowerShell:  $env:RAPIDAPI_KEY="xxxxxxxx" ')
